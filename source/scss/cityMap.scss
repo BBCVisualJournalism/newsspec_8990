@@ -1,0 +1,50 @@
+.map3Holder {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	max-width: 488px;
+	vertical-align: top;
+
+	.fallbackStateMapImg {
+		width: 100%;
+		height: auto;
+	}
+
+	.mapTooltip {
+		position:absolute;
+		padding: 5px;
+		background-color: #fff;
+		border: 1px solid #444;
+		white-space: nowrap;
+		@include opacity(0);
+
+		.tooltipCityVal {
+			color: $chartDarkColor;
+			font-weight: bold;
+		}
+	}
+
+	.hideMapTooltip {
+		display: none;
+	}
+
+	.fadeInMapTooltip {
+		@include opacity(1);
+	}
+
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+//************************** RESPONSIVE
+
+@media all and (min-width: 624px) {
+	.map3Holder {
+		width: 50%;
+		@include box-sizing();
+		padding-right: 16px;
+		padding-bottom:1em;
+	}
+}

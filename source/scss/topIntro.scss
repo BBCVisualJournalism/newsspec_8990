@@ -1,0 +1,42 @@
+.introHolder {
+	position:relative;
+	@include box-sizing();
+	padding: 0 240px 0 0;
+
+	p {
+		margin: 0;
+		padding: 0 0 1em 0;
+		font-weight: bold;
+	}
+
+	a {
+		position:absolute;
+		top:0;
+		right:0;
+
+		.introBrandingImg {
+			width:100%;
+			max-width:224px;
+			height:auto;
+		}
+	}
+
+	.introBottom {
+		clear: both;
+	}
+}
+
+//************************** RESPONSIVE
+@media all and (max-width: 680px) {
+	.introHolder {
+		padding: 0;
+		p {
+			padding: 1em 0;
+		}
+
+		a {
+			position: static;
+			float: right;
+		}
+	}
+}

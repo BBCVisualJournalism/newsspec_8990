@@ -1,0 +1,46 @@
+@import "news_special/defaults";
+@import "mixins";
+@import "variables";
+@import "animations";
+@import "fontSizes";
+@import "app";
+@import "topIntro";
+@import "violenceBreakdownChart";
+@import "caseStudy";
+@import "stateMaps";
+@import "populationViolenceGraph";
+@import "cityMap";
+@import "cityViolenceGraph";
+@import "surveyGraph";
+
+
+.sectionPBody {
+	max-width: 624px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.credits {
+	max-width: 624px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:1em;
+	font-style: italic;
+	font-weight:300;
+}
+
+.dataSource {
+	font-size: 0.8125em;
+	display: block;
+}
+
+.sectionSeperator {
+	margin: 1em 0;
+	width: 100%;
+	height: 1px;
+	background-color: #666;
+}
+
+.hideMe {
+	display: none;
+}

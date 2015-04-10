@@ -1,0 +1,93 @@
+.violenceBreakdownChartTopTextHolder {
+	max-width:230px;
+	margin:0 auto;
+
+	.ptop {
+		margin-bottom: 0.5em;
+	}
+
+	.pmiddle {
+		margin-bottom: 0.5em;
+		padding:0 25px;
+	}
+
+	.pbottom {
+		margin-top: 0.5em;
+		margin-bottom: 4px;
+		padding:0 25px;
+	}
+
+	.centerText {
+		text-align: center;
+	}
+}
+
+.violenceBreakdownChartVerticalLine {
+	width:1px;
+	height:1.5em;
+	background-color:#999;
+	margin:0 auto;
+}
+
+.violenceBreakdownChartHorizontalLine {
+	width:100%;
+	height:1px;
+	background-color:#999;
+	margin:0 auto 0.5em auto;
+}
+
+.violenceBreakdownChart {
+
+	.chartSection {
+		display: inline-block;
+		@include box-sizing();
+		border-right: 1px solid #fff;
+		height: 30px;
+	}
+}
+
+.violenceBreakdownChartText {
+
+	padding-bottom: 1em;
+	
+	.chartSection {
+
+		clear: both;
+		
+		.chartSectionVal {
+			font-size: 1.2em;
+			font-weight: bold;
+			margin:0.2em 0 0 0;
+			padding:0;
+		}
+
+		.chartSectionLabel {
+			font-size: 1em;
+			margin:0.2em 0 0.75em 0;
+			padding:0 0.5em 0 0;
+			float: left;
+			clear: both;
+		}
+	}
+}
+
+//************************** RESPONSIVE
+
+@media all and (min-width: 625px) {
+	.violenceBreakdownChartText {
+		.chartSection {
+			display: inline-block;
+			
+			.chartSectionVal {
+				display: block;
+				margin: 0 0 0.25em 0;
+			}
+			.chartSectionLabel {
+				display: block;
+				margin-bottom: 0;
+				padding:0;
+				float: none;
+			}
+		}
+	}
+}
